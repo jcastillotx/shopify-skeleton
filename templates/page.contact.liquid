@@ -1,6 +1,6 @@
 
 <div class="flex flex-col md:flex-row justify-center gap-8 mx-auto max-wd-[90vw] md:max-w-[80vw]">
-    {%- if page.content != blank and page.title != blank} -%}
+    {%- if page.content != blank and page.title != blank -%}
       <div class="basis-1/2 mx-4">
         <h2 class="text-3xl">{{ page.title }}</h2>
         {{ page.content }}
@@ -10,3 +10,13 @@
     {%- section 'contact-form' -%}
     </div>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- if page.content != blank and page.title != blank} -%}"
+  to: "{%- if page.content != blank and page.title != blank -%}"
+  position: 104..160
+{% endcomment %}
